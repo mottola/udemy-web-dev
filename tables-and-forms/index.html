@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tables and Forms</title>
+</head>
+
+<body>
+    <!-- 	INTRODUCTION TO TABLES       -->
+    <!-- 
+Name   Age
+==========
+Rusty   2
+Wyatt   13
+ -->
+    <table border="1">
+        <thead>
+            <!-- Headers go in here -->
+            <tr>
+                <th>Name</th>
+                <!--th for table head -->
+                <th>Age</th>
+                <th>Breed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Body goes in here -->
+            <tr>
+                <td>Rusy</td>
+                <!-- td for table data -->
+                <td>2</td>
+                <td>Mutt</td>
+            </tr>
+            <tr>
+                <td>Wyatt</td>
+                <td>13</td>
+                <td>Golden</td>
+            </tr>
+        </tbody>
+    </table>
+    </br>
+    </br>
+    </br>
+    </br>
+    <!-- INTRODUCTION TO FORMS    -->
+    <h1>Login</h1>
+    <form action="" method="">
+        <!-- the form tag will enclose all of the form data -->
+        <!-- action - the URL to send form data to -->
+        <!-- method - the type of HTTP request (get (retrieving) or post(sending)) -->
+        <!-- check out MDN for input attributes -->
+        <input name="username" type="text" placeholder="username">
+        <!-- gives text box -->
+        <input name="password" type="password" placeholder="password
+        ">
+        <!-- box for password -->
+        <input type="Submit">
+        <!-- this is identical to a button -->
+    </form>
+    </br>
+    </br>
+    </br>
+    </br>
+    <!-- 	LABELS IN HTML FORMS     -->
+    <form action="" method="">
+        <label for="username">Username</label>
+        <!-- links to username input -->
+        <input id="username" name="username" type="text" placeholder="username">
+        <label for="password">Password</label>
+        <!-- links to password input -->
+        <input id="password" name="password" type="password" placeholder="password">
+        <input type="Submit">
+    </form>
+    </br>
+    </br>
+    </br>
+    </br>
+    <!-- FORM VALIDATION WITH HTML    -->
+    <!-- required makes an error if the field is left blank -->
+    <!-- email validation  is automatic with type="email and required-->
+    <form action="" method="">
+        <label for="email">Email</label>
+        <!-- links to email input -->
+        <input id="email" name="email" type="email" placeholder="email" required>
+        <label for="password">Password</label>
+        <!-- links to password input -->
+        <input id="password" name="password" type="password" placeholder="password" pattern=".{5,10}" required title="Password must be a minimum of 5 and maximum of 10 charcters!">
+        <input type="Submit">
+    </form>
+    </br>
+    </br>
+    </br>
+    </br>
+    <!--  THREE MORE WAYS TO ACCEPT USER INPUT   -->
+    <!-- radio button, select tag, textarea tag  -->
+    <!-- giving radio button's the same name attribute will link them as being one of a set of choices. -->
+    <!-- the value attribute determines what the choice will be stored as in the back end   -->
+    <!-- likewise, giving the select the name attribute will store that data as well -->
+    <p>Do you prefer cats or dogs?</p>
+    <form action="">
+        <label for="dogs">Dogs: </label>
+        <input name="petChoice" id="dogs" type="radio" value="DOGS">
+        <!-- used when user only has one choice -->
+        <label for="cats">Cats</label>
+        <input name="petChoice" id="cats" type="radio" value="CATS">
+        <p>What's your favorite color?</p>
+        <select name="color">
+            <option>Red</option>
+            <option>Orange</option>
+            <option>Yellow</option>
+        </select>
+        <!-- <input type="checkbox"> -->
+        <!-- used when user only has one choice -->
+        <!-- <input type="textarea"> -->
+
+        <p>What's your current mood?</p>
+        <select name="mood">
+            <option value="happy">:)</option>
+            <option value="neutral">:|</option>
+            <option value="sad">:(</option>
+        </select>
+		<br><br>
+        <textarea name="feedback" cols="20" rows="10"></textarea>
+
+        <button>GO!</button>
+    </form>
+</body>
+
+</html>

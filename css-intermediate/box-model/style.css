@@ -1,0 +1,16 @@
+
+body {
+	font-family: 'Poiret One', cursive;
+}
+
+/* Use CSS to style the Box Model */
+p {
+	border: 2px solid blue;
+	width: 50%; /* Using % makes the box responsive to screen size changes */
+	padding: 10px; /* Manipulates the space between content and border */
+	margin: 0 auto; /* Manipulates space between surrounding elements */
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+
