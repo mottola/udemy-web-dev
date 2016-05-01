@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Grid System</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- ==================================   -->
+    <!--               OBJECTIVES             -->
+    <!-- 1. Understand purpose of Grid System -->
+    <!-- 2. Understand the 4 different sizes  -->
+    <!-- 3. Write nested grids                -->
+    <!-- ==================================   -->
+    <!-- The Grid System is a base 12 Layout  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 pink">Col Lg 2</div>
+            <!-- takes up 2 of 12 units -->
+            <div class="col-lg-8 pink">Col Lg 8</div>
+            <!-- takes up 8 of 12 units -->
+            <div class="col-lg-2 pink">Col Lg 2</div>
+            <!-- takes up 2 of 12 units -->
+        </div>
+        <!--  Second Grid Inside of Same Container   -->
+        <div class="row">
+            <div class="col-lg-4 pink">Col Lg 4</div>
+            <!-- takes up 4 of 12 units -->
+            <div class="col-lg-4 pink">Col Lg 4</div>
+            <!-- takes up 4 of 12 units -->
+            <div class="col-lg-4 pink">Col Lg 4</div>
+            <!-- takes up 4 of 12 units -->
+        </div>
+        <div class="row">
+            <!-- Sets our grid display to be responsive based on screen sizes -->
+            <div class="col-md-3 col-sm-6">
+                <div class="row">
+                    <!-- Splitting a row within a row into halves -->
+                    <div class="col-lg-6 orange">First Half</div>
+                    <div class="col-lg-6 orange">Other Half</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">TOUR DAY</div>
+            <div class="col-md-3 col-sm-6">TOUR DAY</div>
+            <div class="col-md-3 col-sm-6">TOUR DAY</div>
+        </div>
+        <!-- Google jQuery CDN  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+
+</html>
