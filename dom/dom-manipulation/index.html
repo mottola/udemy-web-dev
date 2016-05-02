@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM Manipulation</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 class='big'>DOM Manipulation</h1>
+	<p>The style <strong>property</strong> is used to style css on a targeted element</p>
+	<h3>Separation of Concerns: It is recommended for styles to be
+	defined in separate files. The style property allows for quick
+	styling, for example for testing purposes.</h3>
+
+	<p>define a class with styles in CSS, and use JS when 
+	you want to implement those properties. Ex:</p>
+	<p>In CSS Document ---> .aClass { <br>
+	{color: purple; <br>
+	fontSize: 76px; <br>
+	}</p>
+	<p>Then, in JS Document  -----> <br>
+	var tag = document.querySelector('h1');<br>
+	<br>
+	tag.classList.add('aClass');<br>
+	tag.classList.remove('aClass');<br>
+	tag.classList.toggle('aClass');
+	</p>
+
+	<ul>
+		<li>Orchids</li>
+		<li>Succulents</li>
+		<li>Tulips</li>
+	</ul>
+
+	<script src='script.js'></script>
+</body>
+</html>
